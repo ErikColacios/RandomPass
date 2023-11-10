@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomPass</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+    <script type="module" src="/build/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <h1>RandomPass</h1>
+        <div class="hero-content">
+            <div class="input-botones">
+                <p>Introduce el numero de caracteres de tu contraseña</p>
+                <div class="botones-wrapper">
+                    <input type="number" id="longitud" value="1" min="1" max="50" aria-controls="none">
+                    <button id="sumar" class="btn-sumar-restar">+</button>
+                    <button id="restar" class="btn-sumar-restar">-</button>
+                </div>
+                <button id="generar" class="btnGenerar">Generar contraseña</button>
+                <label id="textoGenerado"></label>
+            </div>
+            <div class="radios">
+                <input type="radio" name="complejidad" id="complejidad1" value="Baja">Baja
+                <input type="radio" name="complejidad" id="complejidad2" value="Media">Media
+                <input type="radio" name="complejidad" id="complejidad2" value="Alta" checked>Alta
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
