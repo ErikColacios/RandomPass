@@ -2400,7 +2400,7 @@ body{
   color: white;
   background-image: url("/src/gradient-blue.jpg");
   background-size: cover;
-  touch-action: ;
+  touch-action: none;
 }
 
 .hero{
