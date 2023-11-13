@@ -59,7 +59,6 @@ function generarContraseña () {
     let characters ="ABCDEFGHIJKLMNOPQRSTUVWXYZÑÇabcdefghijklmnopqrstuvwxyzñç0123456789?¿!¡=€$%#&_@|'`/~()[]{}·.:,-_^¨*";
     let res = "";
 
-
     if(inputLongitud){
          longitud = parseInt(inputLongitud.value);
         if(longitud>50){
