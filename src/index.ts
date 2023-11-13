@@ -11,7 +11,6 @@ btnRestar.addEventListener("click", restar);
 btnGenerarPassword.addEventListener("click", generarContraseña);
 
 
-
 // --- Funciones ---
 
 

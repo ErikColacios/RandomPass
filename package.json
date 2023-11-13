@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "npm run build:live",
+    "tw":"npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

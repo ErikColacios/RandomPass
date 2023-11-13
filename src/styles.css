@@ -9,34 +9,34 @@
 }
 
 body{
-    background-color: rgb(196, 255, 196);
+    color: white;
+    background-image: url("/src/gradient-blue.jpg");
+    background-size: cover;
 }
 
-h1{
-    font-size: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 2%;
-}
 .hero{
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .hero-content{
-    display: flex;
+    font-weight: 400;
 }
 
 .input-botones{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(219, 219, 219, 0.315);
 }
 
 
@@ -46,34 +46,12 @@ h1{
 }
 
 .botones-wrapper input{
-    width: 60px;
+    text-align: center;
     border-radius: 5px;
-    text-align: right;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
    -webkit-appearance: none;
 }
 
-.radios{
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    margin-left: 5%;
-}
 
-
-/* --- Botones --- */
-.btn-sumar-restar{
-    background-color: rgb(166, 255, 0);
-    margin-left: 5px;
-    width: 30px;
-    border-radius: 5px;
-}
-
-.btnGenerar{
-    background-color: orange;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5%;
-}
