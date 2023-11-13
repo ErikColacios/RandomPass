@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "tw": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
+    "tw": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
