@@ -11,7 +11,6 @@ btnRestar.addEventListener("click", restar);
 btnGenerarPassword.addEventListener("click", generarContraseña);
 
 
-
 // --- Funciones ---
 
 
@@ -59,7 +58,6 @@ function generarContraseña () {
     let longitud = 0;
     let characters ="ABCDEFGHIJKLMNOPQRSTUVWXYZÑÇabcdefghijklmnopqrstuvwxyzñç0123456789?¿!¡=€$%#&_@|'`/~()[]{}·.:,-_^¨*";
     let res = "";
-
 
     if(inputLongitud){
          longitud = parseInt(inputLongitud.value);

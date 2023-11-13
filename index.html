@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomPass</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/src/styles.css"> -->
+    <script type="module" src="build/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <h1>RandomPass</h1>
+        <div class="hero-content sm:flex">
+            <div class="input-botones md:w-96">
+                <p class="font-bold">Introduce el numero de caracteres de tu contraseña</p>
+                <div class="botones-wrapper">
+                    <input type="number" id="longitud" class="text-black text-xl" value="20" min="1" max="50">
+                    <button id="sumar" class="bg-blue-500 hover:bg-blue-400 font-bold w-8 ml-4 rounded-md">+</button>
+                    <button id="restar" class="bg-blue-500 hover:bg-blue-400 font-bold w-8 ml-2 rounded-md">-</button>
+                </div>
+                <button id="generar" class="bg-violet-400 hover:bg-violet-600 font-bold rounded-md p-1 m-4">Generar</button>
+            </div>
+            <div class="radios flex justify-center space-x-5 sm:flex-col sm:justify-normal sm:text-left sm:space-x-0 sm:text-xl sm:ml-8">
+                <h3 class="font-bold">Complejidad</h3>
+                <div>
+                    <input type="radio" name="complejidad" id="complejidad1" value="Baja"> Baja
+                </div>
+                <div>
+                    <input type="radio" name="complejidad" id="complejidad2" value="Media"> Media
+                </div>
+                <div>
+                    <input type="radio" name="complejidad" id="complejidad2" value="Alta" checked> Alta
+                </div>
+            </div>
+        </div>
+        <label id="textoGenerado" class="bg-white w-96 sm:w-[35rem] p-1 rounded-md m-4 text-xl text-black text-center">Contraseña generada</label>
+    </div>
+</body>
+</html>
