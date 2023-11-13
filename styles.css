@@ -13,6 +13,7 @@ body{
     color: white;
     background-image: url("/src/gradient-blue.jpg");
     background-size: cover;
+    touch-action: none;
 }
 
 .hero{

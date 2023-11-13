@@ -1808,11 +1808,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2405,6 +2400,7 @@ body{
   color: white;
   background-image: url("/src/gradient-blue.jpg");
   background-size: cover;
+  touch-action: ;
 }
 
 .hero{
