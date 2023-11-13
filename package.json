@@ -1,0 +1,19 @@
+{
+  "name": "randompass",
+  "version": "1.0.0",
+  "description": "Random passwords generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "erikcolacios",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomPass</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script type="module" src="../build/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero flex items-center column">
+        <h1>Generador de contraseñas</h1>
+        <div class="flex items-center ">
+            <button id="generar">Generar contraseña</button>
+            <input type="number" id="longitud" value="1" min="1" max="50">
+            <button id="sumar">+</button>
+            <button id="restar">-</button>
+            <label id="textoGenerado"></label>
+            <input type="radio" name="complejidad" id="complejidad1" value="Baja">Baja
+            <input type="radio" name="complejidad" id="complejidad2" value="Media">Media
+            <input type="radio" name="complejidad" id="complejidad2" value="Alta" checked>Alta
+        </div>
+
+    </div>
+</body>
+</html>
