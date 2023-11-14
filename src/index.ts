@@ -2,6 +2,7 @@
 const btnGenerarPassword = document.getElementById("generar") as HTMLElement;
 const btnSumar = document.getElementById("sumar") as HTMLElement;
 const btnRestar = document.getElementById("restar") as HTMLElement;
+const btnCopyToClipboard = document.getElementById("btnCopyToClipboard") as HTMLElement;
 const texto = document.getElementById("textoGenerado") as HTMLLabelElement;
 
 
@@ -9,6 +10,7 @@ const texto = document.getElementById("textoGenerado") as HTMLLabelElement;
 btnSumar.addEventListener("click", sumar);
 btnRestar.addEventListener("click", restar);
 btnGenerarPassword.addEventListener("click", generarContraseña);
+btnCopyToClipboard.addEventListener("click", copyToClipboard);
 
 
 // --- Funciones ---
@@ -76,11 +78,32 @@ function generarContraseña () {
                 //res += characters.charAt(Math.floor(Math.random() * characters.length));
                 res += characters.charAt(Math.random() * characters.length);
             }
-            console.log(res.toString())
             if(res.length != longitud){
                 generarContraseña()
             }
     
             texto.innerHTML = res.toString();
+    }
+}
+
+
+async function copyToClipboard () {
+
+    var copiado:string = "";
+
+    if (!navigator.clipboard) {
+        throw new Error("Browser don't have support for native clipboard.");
+    }
+
+    var nodoCopiar = document.getElementById("textoGenerado");
+
+    if(nodoCopiar){
+        var textoCopiar = nodoCopiar.textContent;
+
+        if(textoCopiar){
+            copiado = textoCopiar;
+        }
+
+    await navigator.clipboard.writeText(copiado);
     }
 }

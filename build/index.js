@@ -2,11 +2,13 @@
 const btnGenerarPassword = document.getElementById("generar");
 const btnSumar = document.getElementById("sumar");
 const btnRestar = document.getElementById("restar");
+const btnCopyToClipboard = document.getElementById("btnCopyToClipboard");
 const texto = document.getElementById("textoGenerado");
 // Listeners
 btnSumar.addEventListener("click", sumar);
 btnRestar.addEventListener("click", restar);
 btnGenerarPassword.addEventListener("click", generarContraseña);
+btnCopyToClipboard.addEventListener("click", copyToClipboard);
 // --- Funciones ---
 /**
  * Boton para sumar el valor
@@ -65,11 +67,24 @@ function generarContraseña() {
             //res += characters.charAt(Math.floor(Math.random() * characters.length));
             res += characters.charAt(Math.random() * characters.length);
         }
-        console.log(res.toString());
         if (res.length != longitud) {
             generarContraseña();
         }
         texto.innerHTML = res.toString();
+    }
+}
+async function copyToClipboard() {
+    var copiado = "";
+    if (!navigator.clipboard) {
+        throw new Error("Browser don't have support for native clipboard.");
+    }
+    var nodoCopiar = document.getElementById("textoGenerado");
+    if (nodoCopiar) {
+        var textoCopiar = nodoCopiar.textContent;
+        if (textoCopiar) {
+            copiado = textoCopiar;
+        }
+        await navigator.clipboard.writeText(copiado);
     }
 }
 export {};
