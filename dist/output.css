@@ -834,12 +834,20 @@ video {
   display: none;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-8 {
   width: 2rem;
 }
 
 .w-96 {
   width: 24rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .flex-shrink {
@@ -1983,6 +1991,26 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2413,11 +2441,6 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-  font-size: 3rem;
-  font-weight: 600;
-}
-
 .hero-content{
   font-weight: 400;
 }
@@ -2520,8 +2543,16 @@ input::-webkit-inner-spin-button {
     display: flex;
   }
 
+  .sm\:w-16 {
+    width: 4rem;
+  }
+
   .sm\:w-\[35rem\] {
     width: 35rem;
+  }
+
+  .sm\:w-\[4rem\] {
+    width: 4rem;
   }
 
   .sm\:flex-col {
@@ -2545,6 +2576,14 @@ input::-webkit-inner-spin-button {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .sm\:font-\[4rem\] {
+    font-weight: 4rem;
   }
 
   .sm\:underline {
