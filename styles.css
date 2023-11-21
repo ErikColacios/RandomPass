@@ -54,3 +54,13 @@ input::-webkit-inner-spin-button {
 }
 
 
+#btnCopyToClipboard{
+    background-color: rgb(11, 241, 115);
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+}
+
+#btnCopyToClipboard:hover{
+    background-color: rgb(11, 241, 203);
+}
