@@ -703,6 +703,10 @@ video {
   margin: 1rem;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -832,6 +836,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-12 {
@@ -1924,6 +1932,18 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .text-left {
