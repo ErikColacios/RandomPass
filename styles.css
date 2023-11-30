@@ -59,10 +59,23 @@ input::-webkit-inner-spin-button {
     background-color: rgb(11, 241, 115);
     border-radius: 10px;
     border: none;
-    transition: 0.2s;
 }
 
 #btnCopyToClipboard:hover{
-    background-color: rgb(11, 241, 203);
+    background-color: rgb(20, 192, 77);
 }
 
+
+input[type="radio"] {
+    -webkit-appearance: none; /* Para navegadores basados en WebKit (Safari, Chrome) */
+    -moz-appearance: none; /* Para navegadores basados en Gecko (Firefox) */
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: greenyellow;
+  }

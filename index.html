@@ -16,7 +16,7 @@
             <img src="src/lock.png" alt="Lock" class="w-12 sm:w-16">
             <h1 class="font-bold text-5xl sm:text-[4rem]">RandomPass</h1>
         </div>
-        <div class="hero-content sm:flex">
+        <div class="hero-content sm:flex mt-2">
             <div class="input-botones md:w-96">
                 <p class="font-bold ml-4">Introduce el número de caracteres de tu contraseña</p>
                 <div class="botones-wrapper mt-4">
@@ -42,6 +42,10 @@
         <div class="flex items-center">
             <label id="textoGenerado" class="bg-white w-96 sm:w-[35rem] p-1 rounded-md m-3 text-xl text-black text-center">y0uR_%¡P@ssW0rD!%</label>
             <button id="btnCopyToClipboard" class="p-1"><img src="/src/copy-to-clipboard.png" alt="Copy to clipboard" class="w-8"></button>
+        </div>
+        <div class="flex justify-center items-center bg-emerald-200 w-80 p-1 rounded-md invisible" id="mensajeCopiedToClipboard">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <p class="text-green-900 font-medium ml-2">Copied to clipboard</p>
         </div>
     </div>
     <div class="flex items-center justify-center w-screen">
