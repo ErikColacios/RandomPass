@@ -78,9 +78,7 @@ function generarContraseña() {
         texto.innerHTML = res.toString();
     }
 }
-async function copyToClipboard() {
-    let intervalo;
-    clearInterval(intervalo);
+function copyToClipboard() {
     var copiado = "";
     if (!navigator.clipboard) {
         throw new Error("Browser don't have support for native clipboard.");
@@ -91,23 +89,23 @@ async function copyToClipboard() {
         if (textoCopiar) {
             copiado = textoCopiar;
         }
-        await navigator.clipboard.writeText(copiado);
+        navigator.clipboard.writeText(copiado);
         // Quitar invisibilidad del mensaje de confirmación
         mostrarMensaje();
     }
 }
-async function mostrarMensaje() {
+function mostrarMensaje() {
     mensajeCopiedToClipboard.classList.remove("invisible");
-    mensajeCopiedToClipboard.classList.add("duration-200");
-    mensajeCopiedToClipboard.classList.add("translate-y-3");
-    mensajeCopiedToClipboard.classList.add("ease-in-out");
-    //Despues de 5 segundos, volver a ocultar el mensaje
-    setInterval(ocultarMensaje, 4000);
-}
-async function ocultarMensaje() {
-    mensajeCopiedToClipboard.classList.add("invisible");
-    mensajeCopiedToClipboard.classList.remove("duration-100");
     mensajeCopiedToClipboard.classList.remove("translate-y-4");
-    mensajeCopiedToClipboard.classList.remove("ease-in-out");
+    mensajeCopiedToClipboard.classList.remove("duration-100");
+    window.requestAnimationFrame(function () {
+        mensajeCopiedToClipboard.classList.add("translate-y-4");
+        mensajeCopiedToClipboard.classList.add("duration-100");
+        //Despues de 4 segundos, volver a ocultar el mensaje
+        setTimeout(ocultarMensaje, 4000);
+    });
+}
+function ocultarMensaje() {
+    mensajeCopiedToClipboard.classList.add("invisible");
 }
 export {};

@@ -715,32 +715,16 @@ video {
   margin-left: 1rem;
 }
 
+.ml-\[-10px\] {
+  margin-left: -10px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[-5px\] {
-  margin-left: -5px;
-}
-
-.ml-\[-15px\] {
-  margin-left: -15px;
-}
-
-.ml-\[-25px\] {
-  margin-left: -25px;
-}
-
-.ml-\[-10px\] {
-  margin-left: -10px;
 }
 
 .box-border {
@@ -870,8 +854,8 @@ video {
   width: 3rem;
 }
 
-.w-16 {
-  width: 4rem;
+.w-24 {
+  width: 6rem;
 }
 
 .w-8 {
@@ -888,10 +872,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .flex-shrink {
@@ -932,11 +912,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.translate-y-3 {
-  --tw-translate-y: 0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-y-4 {
@@ -2452,10 +2427,6 @@ video {
 
 .duration-100 {
   transition-duration: 100ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .ease-in {
