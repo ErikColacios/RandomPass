@@ -79,3 +79,22 @@ input[type="radio"] {
   input[type="radio"]:checked {
     background-color: greenyellow;
   }
+
+  .input-vibrar{
+    animation: vibrar 0.3s linear;
+  }
+
+  @keyframes vibrar{
+    0%{
+        margin-right: 5px;
+        background-color: white;
+    }
+    50%{
+        margin-left: 3px;
+        background-color: rgb(248, 37, 37);
+    }
+    100%{
+        margin: 0px;
+        background-color: white;
+    }
+  }

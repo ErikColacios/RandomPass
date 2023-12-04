@@ -19,6 +19,10 @@ function sumar() {
     if (input) {
         let valor = parseInt(input.value);
         if (valor >= 50) {
+            input.classList.remove("input-vibrar");
+            window.requestAnimationFrame(function () {
+                input.classList.add('input-vibrar');
+            });
             input.value = "50";
         }
         else {

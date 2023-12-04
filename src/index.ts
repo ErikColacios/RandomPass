@@ -19,14 +19,20 @@ btnCopyToClipboard.addEventListener("click", copyToClipboard);
 /**
  * Boton para sumar el valor
  */
+
 function sumar(){
     let input = document.getElementById("longitud") as HTMLInputElement;
+
     if(input){
         let valor = parseInt(input.value);
         if(valor >= 50){
+            input.classList.remove("input-vibrar")
+            window.requestAnimationFrame(function() {
+                input.classList.add('input-vibrar');
+              });
             input.value = "50";
         }else {
-            valor = valor+1;
+            valor = valor + 1;
             input.value = valor.toString();
         }
     }

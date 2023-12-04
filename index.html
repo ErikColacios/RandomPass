@@ -20,8 +20,10 @@
             <div class="input-botones md:w-96">
                 <p class="font-bold ml-4">Introduce el número de caracteres de tu contraseña</p>
                 <div class="botones-wrapper mt-4">
-                    <input type="number" id="longitud" class="text-black text-xl" value="20" min="1" max="50">
-                    <button id="sumar" class="bg-blue-500 hover:bg-blue-400 font-bold w-8 ml-4 rounded-md">+</button>
+                    <div class="flex justify-center w-24">
+                        <input type="number" id="longitud" class="text-black text-xl" value="20" min="1" max="50">
+                    </div>
+                    <button id="sumar" class="bg-blue-500 hover:bg-blue-400 font-bold w-8 rounded-md ml-[-10px]">+</button>
                     <button id="restar" class="bg-blue-500 hover:bg-blue-400 font-bold w-8 ml-2 rounded-md">-</button>
                 </div>
                 <button id="generar" class="bg-violet-400 hover:bg-violet-600 font-bold rounded-md p-1 m-4">Generar</button>
