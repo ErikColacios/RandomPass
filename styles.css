@@ -98,3 +98,16 @@ input[type="radio"] {
         background-color: white;
     }
   }
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+::-webkit-scrollbar-track {
+    background: rgb(54, 54, 54);
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #646464;
+    border-radius: 15px;
+  }

@@ -3,14 +3,18 @@ const btnGenerarPassword = document.getElementById("generar") as HTMLElement;
 const btnSumar = document.getElementById("sumar") as HTMLElement;
 const btnRestar = document.getElementById("restar") as HTMLElement;
 const btnCopyToClipboard = document.getElementById("btnCopyToClipboard") as HTMLElement;
+const btnGuardarPassword = document.getElementById("btnGuardarPassword") as HTMLElement;
 const texto = document.getElementById("textoGenerado") as HTMLLabelElement;
 const mensajeCopiedToClipboard = document.getElementById("mensajeCopiedToClipboard") as HTMLDivElement;
+const listaContraseñas = document.getElementById("listaContraseñas") as HTMLDivElement;
+
 
 
 // Listeners
 btnSumar.addEventListener("click", sumar);
 btnRestar.addEventListener("click", restar);
 btnGenerarPassword.addEventListener("click", generarContraseña);
+btnGuardarPassword.addEventListener("click", guardarPassword);
 btnCopyToClipboard.addEventListener("click", copyToClipboard);
 
 
@@ -87,11 +91,31 @@ function generarContraseña () {
             if(res.length != longitud){
                 generarContraseña()
             }
-    
             texto.innerHTML = res.toString();
     }
 }
 
+
+function guardarPassword () {
+    var copiado:string = "";
+    var listaPasswords:string[] = [];
+
+    const storedPasswords = localStorage.getItem("Pass");
+    if(storedPasswords){
+        listaPasswords = JSON.parse(storedPasswords);
+    }
+
+    var nodoCopiar = document.getElementById("textoGenerado");
+    if(nodoCopiar){
+        var textoCopiar = nodoCopiar.textContent;
+        if(textoCopiar){
+            copiado = textoCopiar;
+            listaPasswords.push(copiado)
+            localStorage.setItem("Pass", JSON.stringify(listaPasswords))
+            listaContraseñas.innerHTML += "<p class='text-lg'>"+copiado+"</p>";
+        }
+    }
+}
 
 function copyToClipboard () {
 
