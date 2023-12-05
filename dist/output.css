@@ -707,6 +707,11 @@ video {
   margin: 1rem;
 }
 
+.my-64 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -725,6 +730,18 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-64 {
+  margin-bottom: 16rem;
 }
 
 .box-border {
@@ -848,6 +865,14 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[92\%\] {
+  height: 92%;
+}
+
+.h-\[90\%\] {
+  height: 90%;
 }
 
 .max-h-32 {
@@ -1980,6 +2005,19 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-left {
