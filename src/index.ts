@@ -120,11 +120,9 @@ function guardarPassword () {
 function copyToClipboard () {
 
     var copiado:string = "";
-
     if (!navigator.clipboard) {
         throw new Error("Browser don't have support for native clipboard.");
     }
-
     var nodoCopiar = document.getElementById("textoGenerado");
 
     if(nodoCopiar){
@@ -132,7 +130,6 @@ function copyToClipboard () {
         if(textoCopiar){
             copiado = textoCopiar;
         }
-
     navigator.clipboard.writeText(copiado);
 
     // Quitar invisibilidad del mensaje de confirmación
@@ -153,7 +150,6 @@ function mostrarMensaje () {
         setTimeout(ocultarMensaje, 4000)
     });
 }
-
 
 function ocultarMensaje () {
     mensajeCopiedToClipboard.classList.add("invisible")
